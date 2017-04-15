@@ -3,7 +3,7 @@
 This is a extension for running lua files in tic80  for mac (and windows soon but should be works with path configuration)
 
 
-![vscodetic80](./images/vscodetic80.gif)
+![vscodetic80](images/vscodetic80.gif)
 
 ## Install
 
