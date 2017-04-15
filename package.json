@@ -1,0 +1,65 @@
+{
+    "name": "tic80-vscode",
+    "displayName": "tic80-vscode",
+    "description": "Edit and run tic80 from vscode",
+    "version": "1.5.0",
+    "publisher": "Gi972",
+    "icon": "images/logo.png",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.runTic"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.runTic",
+                "title": "Run Tic80"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.runTic",
+                "key": "cmd+r"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Tic80 Setup",
+            "properties": {
+                "Tic80.executablePath": {
+                    "type": "string",
+                    "default": "/Applications/tic.app/Contents/MacOS/tic",
+                    "description": "Path to the Tic80 console (by default /Applications/tic.app/Contents/MacOS/tic on MacOS)"
+                },
+                "Tic80.executablePathCard": {
+                    "type": "string",
+                    "default": "/Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.21.0 dev/",
+                    "description": "Path to the card folder (by default /Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.21.0 dev/ on MacOS)"
+                },
+                "Tic80.showNameInformation": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "show information message, desactive it when you develop is better :-)"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "eslint": "^3.6.0",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
