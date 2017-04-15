@@ -5,6 +5,10 @@
     "version": "1.5.0",
     "publisher": "Gi972",
     "icon": "images/logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Gi972/tic80-vscode.git"
+    },
     "engines": {
         "vscode": "^1.10.0"
     },
