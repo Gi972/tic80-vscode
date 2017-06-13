@@ -18,7 +18,7 @@ function activate(context) {
    
     textEditor.document.save();
 
-        const fileName = textEditor.document.fileName;
+        const fileName = textEditor.document.uri.path;
         var cartNameSplit = fileName.split('/');
         var cartName= cartNameSplit[cartNameSplit.length-1].split('.')[0];
         

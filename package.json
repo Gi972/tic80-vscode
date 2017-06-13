@@ -39,12 +39,12 @@
                 "Tic80.executablePath": {
                     "type": "string",
                     "default": "/Applications/tic.app/Contents/MacOS/tic",
-                    "description": "Path to the Tic80 console (by default /Applications/tic.app/Contents/MacOS/tic on MacOS)"
+                    "description": "Path to the Tic80 console (by default /Applications/tic.app/Contents/MacOS/tic on MacOS)  (for windows the syntax is C:\\Program Files (x86)\\Tic80\\tic.exe)"
                 },
                 "Tic80.executablePathCard": {
                     "type": "string",
                     "default": "/Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.27.1 dev/",
-                    "description": "Path to the card folder (by default /Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.27.1 dev/ on MacOS)"
+                    "description": "Path to the card folder (by default /Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.27.1 dev/ on MacOS) (by default on windows is C:\\Users\\NaMeOfYourUserSpace\\AppData\\Roaming\\TIC-80\\0.27.1 dev\\)"
                 },
                 "Tic80.showNameInformation": {
                     "type": "boolean",
