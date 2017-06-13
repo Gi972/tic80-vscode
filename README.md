@@ -3,7 +3,7 @@
 This is a extension for running lua files in tic80  for mac (and windows soon but should be works with path configuration)
 
 
-![vscodetic80](images/vscodetic80.gif)
+![vscodetic80](images/vscodetic80170.gif)
 
 ## Install
 
@@ -14,7 +14,7 @@ in your user workspace
 ````
 {
     "Tic80.executablePath": "/Applications/tic.app/Contents/MacOS/tic",
-    "Tic80.executablePathCard": "/Users/YourUserName/Library/Application Support/TIC-80/0.21.0 dev"
+    "Tic80.executablePathCard": "/Users/YourUserName/Library/Application Support/TIC-80/0.27.1 dev"
 }
 ````
 !!! replace YourUserName by your real username.
@@ -34,7 +34,11 @@ Open tic, create a new cart and save it.
 - Go in your vscode workspace create a file with the same name of your card with extension lua.
 - Paste your code in file.
 - Make your changes.
-- run tic with command Palette ="run tic80" or  cmd + R  
+- Run tic with command Palette ="run tic80" or  cmd + R  
+
+- don't forget:
+     - when you save from vscode, the lua *.file is save but not the *.tic file.
+     - when you save from tic80 application, the *.tic file it's save but not the *.lua file.   
 
 ## Requirements
 
@@ -49,9 +53,15 @@ more explication for configuration on windows soon.
 
 Open a issue for questions
 
+
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+- One instance when you start like the really tic80.
+- You can trace in the console.
+
+### 1.7.0
+One Instance, and trace in console better for debbuging ;-)
+
 
 ### 1.0
 

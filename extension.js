@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 var vscode = require('vscode');
-var cp = require('child_process');
+var TicTerminal = null;
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 function activate(context) {
@@ -16,21 +16,25 @@ function activate(context) {
     var disposable = vscode.commands.registerTextEditorCommand('extension.runTic', function (textEditor) {
         // The code you place here will be executed every time your command is executed
    
-    textEditor.document.save()
-    let fileName = textEditor.document.fileName;
+    textEditor.document.save();
 
-    var cartNameSplit = fileName.split('/');
-    var cartName= cartNameSplit[cartNameSplit.length-1].split('.')[0];
-
-    var args=[`${tic80Setup['executablePathCard']}/${cartName}.tic`,"-code", fileName]
-    cp.execFile(tic80Setup['executablePath'],args);
-
-        // Display a message box to the user
+        const fileName = textEditor.document.fileName;
+        var cartNameSplit = fileName.split('/');
+        var cartName= cartNameSplit[cartNameSplit.length-1].split('.')[0];
         
-        if(tic80Setup['showNameInformation'])
-            vscode.window.showInformationMessage(`rom tic80 you launch ${ cartName }.tic`);
+        const path = tic80Setup['executablePath'];
+        const pathGame = `${tic80Setup['executablePathCard']}/${cartName}.tic`
 
+        var args=[pathGame,"-code",fileName];  
+
+    if(TicTerminal)
+        TicTerminal.dispose();
+     
+        TicTerminal = vscode.window.createTerminal('tic', path, args);
+        TicTerminal.show();
     });
+
+
 
     context.subscriptions.push(disposable);
 }

@@ -2,7 +2,7 @@
     "name": "tic80-vscode",
     "displayName": "tic80-vscode",
     "description": "Edit and run tic80 from vscode",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "publisher": "Gi972",
     "icon": "images/logo.png",
     "repository": {
@@ -43,8 +43,8 @@
                 },
                 "Tic80.executablePathCard": {
                     "type": "string",
-                    "default": "/Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.21.0 dev/",
-                    "description": "Path to the card folder (by default /Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.21.0 dev/ on MacOS)"
+                    "default": "/Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.27.1 dev/",
+                    "description": "Path to the card folder (by default /Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.27.1 dev/ on MacOS)"
                 },
                 "Tic80.showNameInformation": {
                     "type": "boolean",
