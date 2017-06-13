@@ -58,6 +58,7 @@ Open a issue for questions
 
 - One instance when you start like the really tic80.
 - You can trace in the console.
+- Fix path file for windows
 
 ### 1.7.0
 One Instance, and trace in console better for debbuging ;-)
