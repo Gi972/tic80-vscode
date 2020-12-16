@@ -44,7 +44,7 @@
                 "Tic80.executablePathCard": {
                     "type": "string",
                     "default": "/Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.27.1 dev/",
-                    "description": "Path to the card folder (by default /Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.27.1 dev/ on MacOS) (by default on windows is C:\\Users\\NaMeOfYourUserSpace\\AppData\\Roaming\\TIC-80\\0.27.1 dev\\)"
+                    "description": "Path to the card folder (by default /Users/NaMeOfYourUserSpace/Library/Application Support/TIC-80/0.27.1 dev/ on MacOS) (by default on windows is C:\\Users\\NaMeOfYourUserSpace\\AppData\\Roaming\\com.nesbox.tic\\TIC-80\\)"
                 },
                 "Tic80.showNameInformation": {
                     "type": "boolean",
